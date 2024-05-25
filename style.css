@@ -1,4 +1,4 @@
-html {
+  html {
     line-height: 1.15;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
@@ -425,33 +425,33 @@ html {
     max-width: none;
   }
   
-.topnav {
-  background-color: #ffffff;
-  padding: 7px 10px;
-  padding-bottom: 50px;
-}
-
-.topnav .name {
-  font-size: 1.5em;
-  font-weight: bold;
-  float: left;
-  margin-left: 2px; 
-  padding: 5px 8px;
-  margin-bottom: 30px;
-}
-
-/* Style the links inside the navigation bar */
-.topnav a {
-  float: right;
-  margin-right: 30px;
-  color: black;
-  text-align: center;
-  padding: 5px 8px;
-  text-decoration: none;
-  font-size: 17px;
-  margin-bottom: 30px;
-  border-radius: 4px;
-}
+  .topnav {
+    background-color: #ffffff;
+    padding: 7px 10px;
+    padding-bottom: 50px;
+  }
+  
+  .topnav .name {
+    font-size: 1.5em;
+    font-weight: bold;
+    float: left;
+    margin-left: 2px; 
+    padding: 5px 8px;
+    margin-bottom: 30px;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: right;
+    margin-right: 30px;
+    color: black;
+    text-align: center;
+    padding: 5px 8px;
+    text-decoration: none;
+    font-size: 17px;
+    margin-bottom: 30px;
+    border-radius: 4px;
+  }
   
   /* Change the color of links on hover */
   .topnav a:hover {
