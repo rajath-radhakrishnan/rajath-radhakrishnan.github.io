@@ -427,7 +427,7 @@ html {
   
 .topnav {
   background-color: #ffffff;
-  padding: 10px 20px;
+  padding: 7px 10px;
   padding-bottom: 50px;
 }
 
@@ -436,7 +436,7 @@ html {
   font-weight: bold;
   float: left;
   margin-left: 2px; 
-  padding: 8px 15px;
+  padding: 5px 8px;
   margin-bottom: 30px;
 }
 
@@ -446,7 +446,7 @@ html {
   margin-right: 30px;
   color: black;
   text-align: center;
-  padding: 8px 15px;
+  padding: 5px 8px;
   text-decoration: none;
   font-size: 17px;
   margin-bottom: 30px;
