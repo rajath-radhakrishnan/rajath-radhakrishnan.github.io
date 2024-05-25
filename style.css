@@ -425,18 +425,32 @@ html {
     max-width: none;
   }
   
-  .topnav {
-    background-color: #ffffff;
-    padding-bottom: 50px;
-  }
+.topnav {
+  background-color: #ffffff;
+  padding: 10px 20px;
+  padding-bottom: 50px;
+}
 
 .topnav .name {
   font-size: 1.5em;
   font-weight: bold;
   float: left;
   margin-left: 2px; 
-  padding: 10px 16px;
+  padding: 8px 15px;
   margin-bottom: 30px;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: right;
+  margin-right: 30px;
+  color: black;
+  text-align: center;
+  padding: 8px 15px;
+  text-decoration: none;
+  font-size: 17px;
+  margin-bottom: 30px;
+  border-radius: 4px;
 }
   
   /* Style the links inside the navigation bar */
