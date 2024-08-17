@@ -431,7 +431,8 @@
     padding-bottom: 50px;
   }
   
-  .topnav .name {
+/* special styling for displaying name on the left of the page */  
+.topnav .name {
     font-size: 1.5em;
     font-weight: bold;
     float: left;
@@ -439,7 +440,20 @@
     padding: 5px 8px;
     margin-bottom: 30px;
   }
-  
+
+/* Special styling for the last page so that the right margin is less than the other ones */
+.topnav .last{
+    float: right;
+    margin-right: 7px;
+    color: black;
+    text-align: center;
+    padding: 5px 8px;
+    text-decoration: none;
+    font-size: 17px;
+    margin-bottom: 30px;
+    border-radius: 4px;
+  }
+
   /* Style the links inside the navigation bar */
   .topnav a {
     float: right;
