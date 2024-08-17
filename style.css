@@ -478,12 +478,14 @@
     background-color: #3c3c3c;
     color: white;
   }
-  
+
+/*the following makes the photos unclickable*/
   img {
     pointer-events: none;
   }
   
-  .social-media {
+/*the following are for the social media icons on the homepage*/  
+.social-media {
       display: flex;
       justify-content: center;
       margin: 20px 0;
