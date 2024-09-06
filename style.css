@@ -424,7 +424,9 @@
     padding-right: 0;
     max-width: none;
   }
-  
+
+/* MY CODE BELOW */
+
   .topnav {
     background-color: #ffffff;
     padding: 7px 10px;
@@ -473,7 +475,7 @@
     color: black;
   }
   
-  /* Add a color to the active/current link */
+  /* Add a color to the active/current navigation above */
   .topnav a.active {
     background-color: #3c3c3c;
     color: white;
