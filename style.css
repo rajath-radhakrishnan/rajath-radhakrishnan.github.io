@@ -523,6 +523,7 @@ a:hover {
 
   .topnav a:hover {
     color: rgb(110, 52, 142);
+    transform: scale(1.05);
   }
 
   .topnav a.active {
