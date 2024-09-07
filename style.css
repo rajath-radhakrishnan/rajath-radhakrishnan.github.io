@@ -446,6 +446,10 @@
       fill: currentColor;
   }
 
+.social-media a:hover {
+transform: scale(1.05);
+}
+
   /* Set the background color for the entire page */
 body {
   background-color: rgb(236, 223, 204);
