@@ -469,17 +469,26 @@
     border-radius: 4px;
   }
   
-  /* Change the color of links on hover */
+/* Change the color of links on hover
   .topnav a:hover {
-    background-color: #ddd;
+    background-color: rgb(156, 170, 198);
     color: black;
   }
+
   
-  /* Add a color to the active/current navigation above */
-  .topnav a.active {
+  /* Add a color to the active/current link */
+  /* .topnav a.active {
     background-color: #3c3c3c;
     color: white;
+  } */ 
+
+  .topnav a:hover {
+    color: rgb(110, 52, 142);
   }
+
+  .topnav a.active {
+    color: rgb(110, 52, 142);
+  } 
 
 /*the following makes the photos unclickable*/
   img {
@@ -503,5 +512,21 @@
       height: 2em;
       fill: currentColor;
   }
-  
+
+  /* Set the background color for the entire page */
+body {
+  background-color: rgb(236, 223, 204);
+  margin: 0; /* Optional: Removes default margin around the body */
+  padding: 0; /* Optional: Removes default padding around the body */
+}
+
+/* Set the color for all hyperlinks */
+a {
+  color: rgb(19, 61, 147);
+  text-decoration: none; /* Optional: Removes underline from links */
+}
+
+a:hover {
+  color: rgb(110, 52, 142);
+}
   
