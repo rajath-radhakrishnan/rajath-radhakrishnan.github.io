@@ -428,6 +428,24 @@
 /* MY CODE BELOW */
 
 
+/*the following are for the social media icons on the homepage*/  
+.social-media {
+      display: flex;
+      justify-content: center;
+      margin: 20px 0;
+  }
+  .social-media a {
+      text-decoration: none;
+      color: inherit;
+      margin: 0 10px; /* Ensures uniform spacing */
+  }
+  .social-media i, .social-media svg {
+      font-size: 2em;
+      width: 2em;
+      height: 2em;
+      fill: currentColor;
+  }
+
   /* Set the background color for the entire page */
 body {
   background-color: rgb(236, 223, 204);
@@ -515,23 +533,7 @@ a:hover {
     pointer-events: none;
   }
   
-/*the following are for the social media icons on the homepage*/  
-.social-media {
-      display: flex;
-      justify-content: center;
-      margin: 20px 0;
-  }
-  .social-media a {
-      text-decoration: none;
-      color: inherit;
-      margin: 0 10px; /* Ensures uniform spacing */
-  }
-  .social-media i, .social-media svg {
-      font-size: 2em;
-      width: 2em;
-      height: 2em;
-      fill: currentColor;
-  }
+
 
 
   
