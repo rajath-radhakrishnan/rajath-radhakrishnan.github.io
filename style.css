@@ -453,6 +453,11 @@ body {
   padding: 0; /* Optional: Removes default padding around the body */
 }
 
+p {
+  text-align: justify;
+  color:black;
+}
+
 /* Set the color for all hyperlinks */
 a {
   color: rgb(19, 61, 147);
