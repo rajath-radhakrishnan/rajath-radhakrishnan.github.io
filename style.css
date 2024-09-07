@@ -472,7 +472,7 @@ a:hover {
   }
   
 /* special styling for displaying name on the left of the page */  
-.topnav .name {
+.topnav .name a {
     font-size: 1.5em;
     font-weight: bold;
     float: left;
