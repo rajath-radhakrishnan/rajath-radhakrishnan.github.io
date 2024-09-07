@@ -427,6 +427,26 @@
 
 /* MY CODE BELOW */
 
+
+  /* Set the background color for the entire page */
+body {
+  background-color: rgb(236, 223, 204);
+  margin: 0; /* Optional: Removes default margin around the body */
+  padding: 0; /* Optional: Removes default padding around the body */
+}
+
+/* Set the color for all hyperlinks */
+a {
+  color: rgb(19, 61, 147);
+  text-decoration: none; /* Optional: Removes underline from links */
+}
+
+/* Change the color when mouse hovers over the hyperlink */
+a:hover {
+  color: rgb(110, 52, 142);
+}
+
+/*defining the top navigation bar*/
   .topnav {
      background-color: rgb(236, 223, 204);
     padding: 7px 10px;
@@ -513,20 +533,5 @@
       fill: currentColor;
   }
 
-  /* Set the background color for the entire page */
-body {
-  background-color: rgb(236, 223, 204);
-  margin: 0; /* Optional: Removes default margin around the body */
-  padding: 0; /* Optional: Removes default padding around the body */
-}
 
-/* Set the color for all hyperlinks */
-a {
-  color: rgb(19, 61, 147);
-  text-decoration: none; /* Optional: Removes underline from links */
-}
-
-a:hover {
-  color: rgb(110, 52, 142);
-}
   
