@@ -516,6 +516,10 @@ a:hover {
     padding: 5px 8px;
     margin-bottom: 30px;
   }
+
+.topnav .name a.hover {
+ transform: scale(1);
+}
   
 /* Change the color of links on hover
   .topnav a:hover {
@@ -530,10 +534,16 @@ a:hover {
     color: white;
   } */ 
 
+/*scale elements slightly while hovering*/
   .topnav a:hover {
     color: rgb(110, 52, 142);
     transform: scale(1.05);
   }
+
+/* but do not scale for the name*/
+.topnav .name a.hover {
+ transform: scale(1.0);
+}
 
   .topnav a.active {
     color: rgb(110, 52, 142);
