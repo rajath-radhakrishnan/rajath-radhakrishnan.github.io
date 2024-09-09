@@ -537,8 +537,8 @@ a:hover {
   }
 
 /* but do not scale for the name*/
-.topnav .name a.hover {
- transform: scale(0);
+.topnav .name a:hover {
+ transform: scale(1.0);
 }
 
   .topnav a.active {
