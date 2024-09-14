@@ -545,12 +545,10 @@ a:hover {
 
 /* Media query for small screens (phones/tablets) */
 @media screen and (max-width: 768px) {
-  /* Hide all the links except the name and the hamburger icon */
   .topnav a:not(.name) {
     display: none;
   }
 
-  /* Display the hamburger icon */
   .topnav .icon {
     display: block;
     font-size: 30px;
@@ -559,7 +557,6 @@ a:hover {
     padding: 10px;
   }
 
-  /* When the menu is toggled, display the links vertically */
   .topnav.responsive {
     position: relative;
     flex-direction: column;
