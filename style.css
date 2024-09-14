@@ -552,21 +552,41 @@ a:hover {
 
 /*to make sure the website displays properly on mobile phones*/
 
-@media only screen and (max-width: 768px) {
-   nav ul {
-      flex-direction: column; /* Stack menu items vertically */
-      display: block;
-   }
+/* ---------- Mobile-specific CSS (Hamburger Menu) ---------- */
+@media screen and (max-width: 768px) {
+  .topnav a:not(.name) {
+    display: none; /* Hide all links except the name */
+  }
 
-   nav ul li {
-      margin-bottom: 10px; /* Space between items */
-   }
+  .topnav .icon {
+    display: block; /* Display hamburger icon on mobile */
+    font-size: 30px;
+    cursor: pointer;
+    color: black;
+    padding: 10px;
+    float: right; /* Place hamburger on the right */
+    margin-right: 20px; /* Adjust position */
+  }
 
-   nav {
-      padding: 10px;
-   }
+  #navLinks {
+    display: none;
+    flex-direction: column;
+    width: 100%; /* Full width for the dropdown */
+  }
+
+  #navLinks a {
+    text-align: left;
+    padding: 10px 15px;
+    border-top: 1px solid #ddd;
+    background-color: rgb(236, 223, 204); /* Match background color */
+    float: none; /* Ensure links stack vertically */
+    margin-right: 0;
+  }
+
+  .topnav.responsive #navLinks {
+    display: flex; /* Show menu when toggled */
+  }
 }
-
 
 
 
