@@ -532,6 +532,11 @@ a:hover {
     color: rgb(110, 52, 142);
   } 
 
+/*Hide the Hamburger menu icon by default on larger screens*/
+.topnav .icon {
+  display: none;
+}
+
 /*the following makes the photos unclickable*/
   img {
     pointer-events: none;
