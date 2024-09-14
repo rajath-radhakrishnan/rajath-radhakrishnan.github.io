@@ -543,42 +543,39 @@ a:hover {
   }
 
 
-
-/* ---------- Mobile-specific CSS (Hamburger Menu) ---------- */
+/* Media query for small screens (phones/tablets) */
 @media screen and (max-width: 768px) {
+  /* Hide all the links except the name and the hamburger icon */
   .topnav a:not(.name) {
-    display: none; /* Hide all links except the name */
-  }
-
-  .topnav .icon {
-    display: block; /* Display hamburger icon on mobile */
-    font-size: 30px;
-    cursor: pointer;
-    color: black;
-    padding: 10px;
-    float: right; /* Place hamburger on the right */
-    margin-right: 20px; /* Adjust position */
-  }
-
-  #navLinks {
     display: none;
-    flex-direction: column;
-    width: 100%; /* Full width for the dropdown */
   }
 
-  #navLinks a {
+  /* Display the hamburger icon */
+  .topnav .icon {
+    display: block;
+    font-size: 30px;
+    color: black;
+    cursor: pointer;
+    padding: 10px;
+  }
+
+  /* When the menu is toggled, display the links vertically */
+  .topnav.responsive {
+    position: relative;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .topnav.responsive a {
+    display: block;
+    width: 100%;
     text-align: left;
     padding: 10px 15px;
     border-top: 1px solid #ddd;
-    background-color: rgb(236, 223, 204); /* Match background color */
-    float: none; /* Ensure links stack vertically */
-    margin-right: 0;
-  }
-
-  .topnav.responsive #navLinks {
-    display: flex; /* Show menu when toggled */
   }
 }
+
+
 
 
 
