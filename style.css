@@ -549,7 +549,24 @@ a:hover {
   img {
     pointer-events: none;
   }
-  
+
+/*to make sure the website displays properly on mobile phones*/
+
+@media only screen and (max-width: 768px) {
+   nav ul {
+      flex-direction: column; /* Stack menu items vertically */
+      display: block;
+   }
+
+   nav ul li {
+      margin-bottom: 10px; /* Space between items */
+   }
+
+   nav {
+      padding: 10px;
+   }
+}
+
 
 
 
