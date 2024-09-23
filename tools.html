@@ -19,15 +19,18 @@
 
   <div class="topnav">
     <div class="name"> <a href="index.html">Rajath Radhakrishnan</a> </div>
-    <a class="active last" href="tools.html">Tools and Resources</a>
-    <a href="teaching.html">Teaching</a>
-    <a href="talks.html">Talks</a>
-    <a  href="research.html">Research</a>
-    <a  href="index.html">About</a>
-  </div>
+    <div class="navlinks">
+      <a href="index.html">About</a>
+      <a href="research.html">Research</a>
+      <a href="talks.html">Talks</a>
+      <a href="teaching.html">Teaching</a>
+      <a class="active last" href="tools.html">Tools and Resources</a>
+    </div>
+    <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">&#9776;</a>  
+  </div> 
 
-  <body class="stackedit">
-    <div class="stackedit__html">
+  <body>
+    <div class="main__html">
       <h1 id="useful-tools-and-resources">Tools and Resources</h1>
       <p>
         The following is a collection of tools and websites that I find useful
@@ -258,5 +261,24 @@
       <div style="height: 3px;"></div>
       <p><strong>Note:</strong> Please let me know if a link is broken.</p>
     </div>
+
+    <script>
+      function toggleMenu() {
+        var x = document.querySelector(".topnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+  
+      window.addEventListener('resize', function() {
+          var nav = document.getElementById("topnav");
+          if (window.innerWidth > 950) {
+              // If screen is resized to more than 950px, remove the responsive class
+              nav.classList.remove("responsive");
+          }
+      });
+    </script>
   </body>
 </html>

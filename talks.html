@@ -19,16 +19,19 @@
 
 <div class="topnav">
   <div class="name"> <a href="index.html">Rajath Radhakrishnan</a> </div>
-    <a class="last" href="tools.html">Tools and Resources</a>
-    <a href="teaching.html">Teaching</a>
+  <div class="navlinks">
+    <a href="index.html">About</a>
+    <a href="research.html">Research</a>
     <a class="active" href="talks.html">Talks</a>
-    <a  href="research.html">Research</a>
-    <a  href="index.html">About</a>
+    <a href="teaching.html">Teaching</a>
+    <a class="last" href="tools.html">Tools and Resources</a>
   </div>
+  <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">&#9776;</a>  
+</div> 
 
 
-<body class="stackedit">
-  <div class="stackedit__html"><h1 id="talks">Talks</h1>
+<body>
+  <div class="main__html"><h1 id="talks">Talks</h1>
     <p>
         A list of my talks along with the PDF of the presentations can be found below. If available,
      I have also provided the link to the video of the talks. 
@@ -109,6 +112,25 @@
 </li>
 </ul>
 </div>
+
+<script>
+  function toggleMenu() {
+    var x = document.querySelector(".topnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+
+  window.addEventListener('resize', function() {
+      var nav = document.getElementById("topnav");
+      if (window.innerWidth > 950) {
+          // If screen is resized to more than 950px, remove the responsive class
+          nav.classList.remove("responsive");
+      }
+  });
+</script>
 </body>
 
 </html>

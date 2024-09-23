@@ -1,574 +1,338 @@
-  html {
-    line-height: 1.15;
-    -ms-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%;
-  }
-  body {
-    margin: 0;
-  }
-  article,
-  aside,
-  footer,
-  header,
-  nav,
-  section {
-    display: block;
-  }
-  h1 {
-    font-size: 2em;
-    margin: 0.67em 0;
-  }
-  figcaption,
-  figure {
-    display: block;
-  }
-  figure {
-    margin: 1em 40px;
-  }
-  hr {
-    box-sizing: content-box;
-    height: 0;
-    overflow: visible;
-  }
-  main {
-    display: block;
-  }
-  pre {
-    font-family: monospace, monospace;
-    font-size: 1em;
-  }
-  a {
-    background-color: transparent;
-    -webkit-text-decoration-skip: objects;
-  }
-  abbr[title] {
-    border-bottom: none;
-    text-decoration: underline;
-    text-decoration: underline dotted;
-  }
-  b,
-  strong {
-    font-weight: inherit;
-    font-weight: bolder;
-  }
-  code,
-  kbd,
-  samp {
-    font-family: monospace, monospace;
-    font-size: 1em;
-  }
-  dfn {
-    font-style: italic;
-  }
-  mark {
-    background-color: #ff0;
-    color: #000;
-  }
-  small {
-    font-size: 80%;
-  }
-  sub,
-  sup {
-    font-size: 75%;
-    line-height: 0;
-    position: relative;
-    vertical-align: baseline;
-  }
-  sub {
-    bottom: -0.25em;
-  }
-  sup {
-    top: -0.5em;
-  }
-  audio,
-  video {
-    display: inline-block;
-  }
-  audio:not([controls]) {
-    display: none;
-    height: 0;
-  }
-  img {
-    border-style: none;
-  }
-  svg:not(:root) {
-    overflow: hidden;
-  }
-  button,
-  input,
-  optgroup,
-  select,
-  textarea {
-    font-family: sans-serif;
-    font-size: 100%;
-    line-height: 1.15;
-    margin: 0;
-  }
-  button {
-    overflow: visible;
-  }
-  button,
-  select {
-    text-transform: none;
-  }
-  [type="reset"],
-  [type="submit"],
-  button,
-  html [type="button"] {
-    -webkit-appearance: button;
-  }
-  [type="button"]::-moz-focus-inner,
-  [type="reset"]::-moz-focus-inner,
-  [type="submit"]::-moz-focus-inner,
-  button::-moz-focus-inner {
-    border-style: none;
-    padding: 0;
-  }
-  [type="button"]:-moz-focusring,
-  [type="reset"]:-moz-focusring,
-  [type="submit"]:-moz-focusring,
-  button:-moz-focusring {
-    outline: 1px dotted ButtonText;
-  }
-  input {
-    overflow: visible;
-  }
-  [type="checkbox"],
-  [type="radio"] {
-    box-sizing: border-box;
-    padding: 0;
-  }
-  [type="number"]::-webkit-inner-spin-button,
-  [type="number"]::-webkit-outer-spin-button {
-    height: auto;
-  }
-  [type="search"] {
-    -webkit-appearance: textfield;
-    outline-offset: -2px;
-  }
-  [type="search"]::-webkit-search-cancel-button,
-  [type="search"]::-webkit-search-decoration {
-    -webkit-appearance: none;
-  }
-  ::-webkit-file-upload-button {
-    -webkit-appearance: button;
-    font: inherit;
-  }
-  fieldset {
-    padding: 0.35em 0.75em 0.625em;
-  }
-  legend {
-    box-sizing: border-box;
-    display: table;
-    max-width: 100%;
-    padding: 0;
-    color: inherit;
-    white-space: normal;
-  }
-  progress {
-    display: inline-block;
-    vertical-align: baseline;
-  }
-  textarea {
-    overflow: auto;
-  }
-  details {
-    display: block;
-  }
-  summary {
-    display: list-item;
-  }
-  menu {
-    display: block;
-  }
-  canvas {
-    display: inline-block;
-  }
-  [hidden],
-  template {
-    display: none;
-  }
-  body,
-  html {
-    color: rgba(0, 0, 0, 0.75);
-    font-size: 16px;
-    font-family: Lato, Helvetica Neue, Helvetica, sans-serif;
-    font-variant-ligatures: common-ligatures;
-    line-height: 1.67;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-  .app--dark .layout__panel--editor,
-  .app--dark .layout__panel--preview {
-    color: hsla(0, 0%, 100%, 0.75);
-  }
-  blockquote,
-  dl,
-  ol,
-  p,
-  pre,
-  ul {
-    margin: 1.2em 0;
-  }
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    margin: 1.8em 0;
-    line-height: 1.33;
-  }
-  h1:after,
-  h2:after {
-    content: "";
-    display: block;
-    position: relative;
-    top: 0.33em;
-    border-bottom: 1px solid hsla(0, 0%, 50%, 0.33);
-  }
-  ol ol,
-  ol ul,
-  ul ol,
-  ul ul {
-    margin: 0;
-  }
-  dt {
-    font-weight: 700;
-  }
-  a {
-    color: #0c93e4;
-    text-decoration: underline;
-    text-decoration-skip: ink;
-  }
-  a:focus,
-  a:hover {
-    text-decoration: none;
-  }
-  code,
-  pre,
-  samp {
-    font-family: Roboto Mono, Lucida Sans Typewriter, Lucida Console, monaco,
-      Courrier, monospace;
-    font-size: 0.85em;
-  }
-  code *,
-  pre *,
-  samp * {
-    font-size: inherit;
-  }
-  blockquote {
-    color: rgba(0, 0, 0, 0.5);
-    padding-left: 1.5em;
-    border-left: 5px solid rgba(0, 0, 0, 0.1);
-  }
-  .app--dark .layout__panel--editor blockquote,
-  .app--dark .layout__panel--preview blockquote {
-    color: hsla(0, 0%, 100%, 0.4);
-    border-left-color: hsla(0, 0%, 100%, 0.1);
-  }
-  code {
-    background-color: rgba(0, 0, 0, 0.05);
-    border-radius: 3px;
-    padding: 2px 4px;
-  }
-  hr {
-    border: 0;
-    border-top: 1px solid hsla(0, 0%, 50%, 0.33);
-    margin: 2em 0;
-  }
-  pre > code {
-    background-color: rgba(0, 0, 0, 0.05);
-    display: block;
-    padding: 0.5em;
-    -webkit-text-size-adjust: none;
-    overflow-x: auto;
-    white-space: pre;
-  }
-  .toc ul {
-    list-style-type: none;
-    padding-left: 20px;
-  }
-  table {
-    background-color: transparent;
-    border-collapse: collapse;
-    border-spacing: 0;
-  }
-  td,
-  th {
-    border-right: 1px solid #dcdcdc;
-    padding: 8px 12px;
-  }
-  td:last-child,
-  th:last-child {
-    border-right: 0;
-  }
-  td {
-    border-top: 1px solid #dcdcdc;
-  }
-  mark {
-    background-color: #f8f840;
-  }
-  kbd {
-    font-family: Lato, Helvetica Neue, Helvetica, sans-serif;
-    background-color: #fff;
-    border: 1px solid rgba(63, 63, 63, 0.25);
-    border-radius: 3px;
-    box-shadow: 0 1px 0 rgba(63, 63, 63, 0.25);
-    color: #333;
-    display: inline-block;
-    font-size: 0.8em;
-    margin: 0 0.1em;
-    padding: 0.1em 0.6em;
-    white-space: nowrap;
-  }
-  abbr[title] {
-    border-bottom: 1px dotted #777;
-    cursor: help;
-  }
-  img {
-    max-width: 100%;
-  }
-  .task-list-item {
-    list-style-type: none;
-  }
-  .task-list-item-checkbox {
-    margin: 0 0.2em 0 -1.3em;
-  }
-  .footnote {
-    font-size: 0.8em;
-    position: relative;
-    top: -0.25em;
-    vertical-align: top;
-  }
-  .page-break-after {
-    page-break-after: always;
-  }
-  .abc-notation-block {
-    overflow-x: auto !important;
-  }
-  .stackedit__html {
-    margin-bottom: 180px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 30px;
-    padding-right: 30px;
-    max-width: 750px;
-  }
-  .stackedit__toc ul {
-    padding: 0;
-  }
-  .stackedit__toc ul a {
-    margin: 0.5rem 0;
-    padding: 0.5rem 1rem;
-  }
-  .stackedit__toc ul ul {
-    color: #888;
-    font-size: 0.9em;
-  }
-  .stackedit__toc ul ul a {
-    margin: 0;
-    padding: 0.1rem 1rem;
-  }
-  .stackedit__toc li {
-    display: block;
-  }
-  .stackedit__toc a {
-    display: block;
-    color: inherit;
-    text-decoration: none;
-  }
-  .stackedit__toc a:active,
-  .stackedit__toc a:focus,
-  .stackedit__toc a:hover {
-    background-color: rgba(0, 0, 0, 0.075);
-    border-radius: 3px;
-  }
-  .stackedit__left {
-    position: fixed;
-    display: none;
-    width: 250px;
-    height: 100%;
-    top: 0;
-    left: 0;
-    overflow-x: hidden;
-    overflow-y: auto;
-    -webkit-overflow-scrolling: touch;
-    -ms-overflow-style: none;
-  }
-  @media (min-width: 1060px) {
-    .stackedit__left {
-      display: block;
-    }
-  }
-  .stackedit__right {
-    position: absolute;
-    right: 0;
-    top: 0;
-    left: 0;
-  }
-  @media (min-width: 1060px) {
-    .stackedit__right {
-      left: 250px;
-    }
-  }
-  .stackedit--pdf blockquote {
-    border-left-color: #ececec;
-  }
-  .stackedit--pdf .katex-mathml,
-  .stackedit--pdf annotation {
-    display: none;
-  }
-  .stackedit--pdf .stackedit__html {
-    padding-left: 0;
-    padding-right: 0;
-    max-width: none;
-  }
+html {
+  line-height: 1.15;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+}
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block;
+}
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+figcaption,
+figure {
+  display: block;
+}
+figure {
+  margin: 1em 40px;
+}
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+main {
+  display: block;
+}
+pre {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+b,
+strong {
+  font-weight: inherit;
+  font-weight: bolder;
+}
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+dfn {
+  font-style: italic;
+}
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+small {
+  font-size: 80%;
+}
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sub {
+  bottom: -0.25em;
+}
+sup {
+  top: -0.5em;
+}
+
+img {
+  border-style: none;
+}
+svg:not(:root) {
+  overflow: hidden;
+}
+
+body,
+html {
+  color: rgba(0, 0, 0, 0.75);
+  font-size: 16px;
+  font-family: Lato, Helvetica Neue, Helvetica, sans-serif;
+  font-variant-ligatures: common-ligatures;
+  line-height: 1.67;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+blockquote,
+dl,
+ol,
+p,
+pre,
+ul {
+  margin: 1.2em 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 1.8em 0;
+  line-height: 1.33;
+}
+h1:after,
+h2:after {
+  content: "";
+  display: block;
+  position: relative;
+  top: 0.33em;
+  border-bottom: 1px solid hsla(0, 0%, 50%, 0.33);
+}
+
+img {
+  max-width: 100%;
+}
+
+.footnote {
+  font-size: 0.8em;
+  position: relative;
+  top: -0.25em;
+  vertical-align: top;
+}
+
+.main__html {
+  margin-bottom: 180px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 30px;
+  padding-right: 30px;
+  max-width: 750px;
+}
+
 
 /* MY CODE BELOW */
 
 
 /*the following are for the social media icons on the homepage*/  
 .social-media {
-      display: flex;
-      justify-content: center;
-      margin: 20px 0;
-  }
-  .social-media a {
-      text-decoration: none;
-      color: inherit;
-      margin: 0 10px; /* Ensures uniform spacing */
-  }
-  .social-media i, .social-media svg {
-      font-size: 2em;
-      width: 2em;
-      height: 2em;
-      fill: currentColor;
-  }
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    margin-left: 30px;
+}
+.social-media a {
+    text-decoration: none;
+    color: inherit;
+    margin: 0 10px; /* Ensures uniform spacing */
+}
+.social-media i, .social-media svg {
+    font-size: 2em;
+    width: 2em;
+    height: 2em;
+    fill: currentColor;
+}
 
 .social-media a:hover {
 transform: scale(1.05);
 }
 
-  /* Set the background color for the entire page */
+/* Set the background color for the entire page */
 body {
-  background-color: rgb(236, 223, 204);
-  margin: 0; /* Optional: Removes default margin around the body */
-  padding: 0; /* Optional: Removes default padding around the body */
+background-color: rgb(236, 223, 204);
+margin: 0; /* Optional: Removes default margin around the body */
+padding: 0; /* Optional: Removes default padding around the body */
 }
 
 p {
-  text-align: justify;
-  color:black;
+text-align: justify;
+color:black;
 }
 
 /* Set the color for all hyperlinks */
 a {
-  color: rgb(19, 61, 147);
-  text-decoration: none; /* Optional: Removes underline from links */
+color: rgb(19, 61, 147);
+text-decoration: none; /* Optional: Removes underline from links */
 }
 
 /* Change the color when mouse hovers over the hyperlink */
 a:hover {
-  color: rgb(110, 52, 142);
+color: rgb(110, 52, 142);
 }
 
-/*defining the top navigation bar*/
-  .topnav {
-     background-color: rgb(236, 223, 204);
-    padding: 7px 10px;
-    padding-bottom: 50px;
-  }
 
-/* Special styling for the last page so that the right margin is less than the other ones */
-.topnav .last{
-    float: right;
-    margin-right: 7px;
-    color: black;
-    text-align: center;
-    padding: 5px 8px;
-    text-decoration: none;
-    font-size: 17px;
-    margin-bottom: 30px;
-    border-radius: 4px;
-  }
 
-  /* Style the links inside the navigation bar */
-  .topnav a {
-    float: right;
-    margin-right: 30px;
-    color: black;
-    text-align: center;
-    padding: 5px 8px;
-    text-decoration: none;
-    font-size: 17px;
-    margin-bottom: 30px;
-    border-radius: 4px;
-    font-weight: bold;
-  }
-
-/* special styling for displaying name on the left of the page */  
-.topnav .name a {
-    font-size: 1.5em;
-    font-weight: bold;
-    float: left;
-    margin-left: 2px; 
-    padding: 5px 8px;
-    margin-bottom: 30px;
-  }
-
-/*scale elements slightly while hovering*/
-  .topnav a:hover {
-    color: rgb(110, 52, 142);
-    transform: scale(1.05);
-  }
-
-/* but do not scale for the name*/
-.topnav .name a:hover {
- transform: scale(1.0);
+/*the following makes the photos unclickable*/
+img {
+  pointer-events: none;
 }
 
-  .topnav a.active {
-    color: rgb(110, 52, 142);
-  } 
 
-/*Hide the Hamburger menu icon by default on larger screens*/
+
+/*Hide the Hamburger icon by default on larger screens*/
 .topnav .icon {
   display: none;
 }
 
-/*the following makes the photos unclickable*/
-  img {
-    pointer-events: none;
-  }
+
+/* Default styles for the topnav */
+.topnav {
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Space between name and navlinks */
+  align-items: center; /* Center items vertically */
+  background-color: rgb(236, 223, 204);
+  padding: 7px 10px;
+  padding-bottom: 1px;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.topnav .name {
+  margin-top: -4px;
+}
+
+.topnav .name a {
+  font-size: 1.5em;
+    font-weight: bold;
+    float: left;
+    margin-left: 2px; 
+    padding: 5px 5px;
+    margin-bottom: 10px;
+}
 
 
-/* Media query for small screens (phones/tablets) */
-@media screen and (max-width: 768px) {
-  .topnav a:not(.name) {
-    display: none;
-  }
 
+.topnav .navlinks {
+  display: flex; /* Display links horizontally by default */
+}
+
+
+.topnav a {
+  float: right;
+  margin-right: 30px;
+  color: black;
+  text-align: center;
+  padding: 5px 8px;
+  text-decoration: none;
+  font-size: 19px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.topnav .navlinks .last{
+  float: right;
+  margin-right: 7px;
+  text-align: center;
+  padding: 5px 8px;
+  font-size: 19px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+
+.topnav a:hover {
+  color: rgb(110, 52, 142);
+  transform: scale(1.05);
+}
+
+.topnav .name a:hover{
+  transform: scale(1.0);
+}
+
+.topnav a.active {
+  color: rgb(110, 52, 142);
+} 
+
+.topnav.responsive .navlinks{
+  height: 100%; /* Full-screen overlay */
+  width: 100%; 
+  left:0px;
+  position: fixed;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.87); /* Translucent background */
+  z-index: 1000; /* Make sure it's on top of other content */
+  display: none; /* Hidden by default */
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; 
+}
+
+.topnav.responsive .navlinks a {
+  padding: 1px; /* Adjust padding for vertical layout */
+  color: rgb(255, 255, 255);
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+}
+
+
+.topnav.responsive .navlinks .last{
+  padding: 5px 8px;
+  padding: 5px 8px;
+  margin-left: -15px;
+}
+
+.topnav.responsive a:hover {
+  color: rgb(110, 52, 142);
+  transform: scale(1.05);
+}
+
+.topnav.responsive a.active {
+  color: rgb(110, 52, 142);
+} 
+
+.topnav.responsive .last a:hover {
+  color: rgb(110, 52, 142);
+  transform: scale(1.05);
+}
+
+.topnav .responsive .icon a {
+  font-size: 50px; /* Change this to adjust the size of the icon */
+  margin-right: -20px;
+}
+
+/* Show the icon when the screen is small */
+@media screen and (max-width: 1000px) {
   .topnav .icon {
-    display: block;
-    font-size: 30px;
-    color: black;
+    display: block; /* Show the icon */
     cursor: pointer;
-    padding: 10px;
+    font-size: 25px;
+    margin-top: -6px;
+    margin-right: -5px;
   }
 
-  .topnav.responsive {
-    position: relative;
-    flex-direction: column;
-    align-items: flex-start;
+  .topnav .navlinks {
+    display: none; /* Hide navlinks initially on small screens */
   }
 
-  .topnav.responsive a {
-    display: block;
-    width: 100%;
-    text-align: left;
-    padding: 10px 15px;
-    border-top: 1px solid #ddd;
+  .topnav.responsive .navlinks {
+    display: flex; /* Show navlinks when responsive class is added */
   }
 }
 
@@ -576,4 +340,3 @@ a:hover {
 
 
 
-  

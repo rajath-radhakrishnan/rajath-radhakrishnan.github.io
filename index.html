@@ -20,18 +20,20 @@
   </head>
 
 
-<div class="topnav">
+  <div class="topnav">
     <div class="name"> <a href="index.html">Rajath Radhakrishnan</a> </div>
-    <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">&#9776;</a> <!-- Hamburger Icon -->
-    <a class="last" href="tools.html">Tools and Resources</a>
-    <a href="teaching.html">Teaching</a>
-    <a href="talks.html">Talks</a>
-    <a href="research.html">Research</a>
-    <a class="active" href="#about">About</a>
-  </div> 
+    <div class="navlinks">
+      <a class="active" href="index.html">About</a>
+      <a href="research.html">Research</a>
+      <a href="talks.html">Talks</a>
+      <a href="teaching.html">Teaching</a>
+      <a class="last" href="tools.html">Tools and Resources</a>
+    </div>
+    <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">&#9776;</a>  
+  </div>  
 
-  <body class="stackedit">
-    <div class="stackedit__html">
+  <body>
+    <div class="main__html">
       
       <p></p>
 
@@ -88,6 +90,14 @@
         x.className = "topnav";
       }
     }
+
+    window.addEventListener('resize', function() {
+        var nav = document.getElementById("topnav");
+        if (window.innerWidth > 950) {
+            // If screen is resized to more than 950px, remove the responsive class
+            nav.classList.remove("responsive");
+        }
+    });
   </script>
   </body>
 </html>
