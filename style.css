@@ -209,6 +209,7 @@ img {
   align-items: center; /* Center items vertically */
   background-color: rgb(236, 223, 204);
   padding: 7px 10px;
+  padding-top: 3px;
   padding-bottom: 1px;
   margin-bottom: 10px;
   position: relative;
@@ -223,7 +224,7 @@ img {
     font-weight: bold;
     float: left;
     margin-left: 2px; 
-    padding: 5px 5px;
+    padding-left: 8px;
     margin-bottom: 10px;
 }
 
