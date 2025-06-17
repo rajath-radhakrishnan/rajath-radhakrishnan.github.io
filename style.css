@@ -316,7 +316,7 @@ img {
 }
 
 /* Show the icon when the screen is small */
-@media screen and (max-width: 1240px) {
+@media screen and (max-width: 1260px) {
   .topnav .icon {
     display: block; /* Show the icon */
     cursor: pointer;
