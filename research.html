@@ -19,6 +19,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.18/katex.min.css">
     </noscript>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="research-improved.css" />
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.18/katex.min.js"></script>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.18/contrib/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
   </head>
@@ -36,134 +37,88 @@
     <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">&#9776;</a>  
   </div> 
 
-  <body>
+ <body>
     <div class="main__html">
-      <h1 id="research-highlights">Research Highlights</h1>
+      <h1 id="research-areas">Research Areas</h1>
 
-      <h3 id="anomaly-matching">
-        Anomaly matching for non-invertible symmetries 
-      </h3>
+      <section class="research-area">
+        <img class="research-area-image" src="Gensym.png" alt="Cartoon illustration of generalized symmetries on a lattice">
+        <h2>Generalized symmetries of field theories and lattice models</h2>
+        <p>Symmetries describe ways in which a physical system can be changed without altering its underlying
+behaviour. A simple example is a wallpaper or tiled floor: shifting the pattern by one repeating unit leaves it
+looking unchanged. Similarly, symmetries in physics reveal hidden patterns that govern the behaviour of
+nature, making them one of the most fundamental tools for understanding and predicting physical phenomena.
+<p>
+My research explores how this idea extends into the quantum world. Quantum field theory (QFT), the mathematical
+framework describing elementary particles and the fundamental forces, possesses symmetries far richer than
+those encountered in everyday life. These generalized symmetries have emerged as a powerful way of
+understanding quantum systems, revealing unexpected connections between different areas of physics. A
+central question is which generalized symmetries are physically possible. Fundamental physical principles,
+such as locality, the idea that objects can only directly influence their immediate surroundings, place strong
+restrictions on the symmetries that quantum systems can possess. Understanding these restrictions is
+essential for determining which generalized symmetries can arise in nature.</p>
+<p> In a QFT, generalized symmetries are implemented by certain special operators called topological operators whose
+  correlation functions only depend on the topology of the submanifolds on which they are defined rather than its geometric
+  details. These operators are highly constrianed to the extent that their construction and classification is amenable
+          to a bootstrap approach. My research involves constraining the possible generalized symmetries of QFTs in 
+          various dimensions using this 'topological boostrap'. 
+</p>
+      </section>
 
-      <p>
-        <img
-            align="right"
-            src="./RGflow.png"
-            alt="RGflow.jpeg"
-            border="0"
-            width="180"
-            height="280"
-        />
-      </p>
-      <p align="justify">
-        Like ordinary symmetries, non-invertible symmetries can have ’t Hooft anomalies. In general, 
-        these anomalies put additional constraints on RG flows beyond those imposed by ordinary 
-        symmetries. In <a href="https://arxiv.org/abs/2408.00866">this</a> work with Mahesh Balasubramanian
-        and Matthew Buican, we study a generalisation of ’t Hooft anomaly matching for non-invertible 
-        1-form symmetries in 2+1d. We focus on symmetries implemented by topological line operators with real 
-        spins. These symmetries and their anomalies can be explicitly classified. Our classification implies that
-        if a topological phase with a low-energy TQFT description contains anyons with non-invertible fusion rules,
-        then it must contain anyons with complex spins. We study various RG flows preserving non-invertible 
-        1-form symmetries to illustrate the generalized anomaly matching condition. 
-      </p>
+      
 
-      <h3 id="anomalies-of-non-invertible-symmetries-and-symtfts">
-        Anomalies of non-invertible symmetries and SymTFTs
-      </h3>
+      <section class="research-area">
+        <img class="research-area-image tqft-image" src="TQFT.png" alt="Cartoon illustration of linked loops representing topological quantum field theories">
+        <h2>Topological quantum field theories</h2>
+        <p>Topological quantum field theories (TQFTs) are special QFTs where all operators are topological. Since 
+          topological operators implement symmetries, these can be thought of as QFTs in which all operators implement 
+          a symmetry. Physically, they arise as the low-energy limits of various QFTs and quantum lattice models. They also
+          play an important role in characterizing the action of generalized symmetries on general QFTs as any QFT with a given
+          generalized symmetry can be realized on the boundary of a corresponding TQFT.</p>
+          <p>
+          A TQFT is not merely a collection of topological operators; it must also satisfy various consistency conditions 
+          that ensure these operators define a consistent QFT in their own right. My research involves 
+          studying TQFTs through the “topological bootstrap,” supplemented by these additional constraints.
+My earlier work focused on certain transformations in the space of TQFTs known as Galois conjugations, as well as on 
+identifying invariants of TQFTs under these transformations. I am currently developing a systematic method for gauging 
+non-invertible symmetries of TQFTs. I also study entanglement measures for the ground states of quantum lattice models, with the goal of identifying 
+quantities that completely determine the corresponding continuum TQFT.
+          </p>
+      </section>
 
-      <p>
-        <img
-            align="right"
-            src="./SymTFT.png"
-            alt="JSZLjzg.png"
-            border="0"
-            width="230"
-        />
-      </p>
-      <p align="justify">
-        Anomalies of non-invertible symmetries in a 1+1d QFT are captured by
-        gapped boundaries of a 2+1d TQFT called the SymTFT. In
-        <a href="https://arxiv.org/abs/2405.04619">this</a> work, along with
-        Pavel Putrov, we find the explicit map between non-anomalous symmetries
-        in 1+1d and gapped boundaries of the SymTFT. This relation provides a
-        new method to classify non-anomalous line operators in 1+1d from the
-        bulk SymTFT. Moreover, we show that a non-invertible symmetry \( \mathcal{C} \)
-        admits a trivially gapped phase if and only if the SymTFT \( \mathcal{Z}(\mathcal{C}) \)
-        admits a magnetic Lagrangian algebra.
-      </p>
+      <section class="research-area">
+        <img class="research-area-image" src="QECC.png" alt="Cartoon illustration of quantum error correction">
+        <h2>Quantum error correction and field theories</h2>
+        <p>Quantum computers have the potential to solve problems beyond the reach of classical computers, from 
+          simulating complex quantum systems to discovering new materials. Their practical realisation depends on 
+          protecting fragile quantum information from errors. Error correction underpins everyday technologies such as 
+          5G and WiFi. Quantum error-correcting codes (QECCs) achieve the same for quantum computers by storing 
+          information across many qubits. 
+        </p>
+        <p>Many QECCs are realized using the ground states of quantum lattice models. In the continuum limit, 
+          these models are described by QFTs that capture universal features of the corresponding QECCs, including 
+          aspects of their fault-tolerant properties. My research explores how QECCs can be constructed directly from 
+          continuum QFTs. My work has shown that certain quantum stabilizer codes can be constructed from the spectrum 
+          of local and twisted-sector primary operators in RCFTs. More recently, I have interpreted measurements in 
+          Floquet codes as non-invertible symmetries of a TQFT. I have also shown that error detection in Floquet codes
+           can be characterized by the braiding of certain topological operators in the corresponding TQFT.
+        </p>
+      </section>
 
-      <h3 id="constraints-on-non-invertible-symmetries-in-21d">
-        Constraints on non-invertible symmetries in 2+1d
-      </h3>
-      <p>
-        <img
-            align="right"
-            src="./fusiononsur.png"
-            alt="JSZLjzg.png"
-            border="0"
-            width="480"
-        />
-      </p>
-      <p align="justify">
-        Classification of non-invertible symmetries in \( d \geq 3\) dimensions is an active area of research. In
-        <a href="https://arxiv.org/abs/2309.15181">this</a> paper with Matthew
-        Buican, we show that a 2+1d TQFT admits a no-invertible surface operator
-        if and only if it contains bosonic line operators. We relate this proof
-        to higher-gauging by determining a crtierion for a condensation defect
-        to be invertible. We also comment on the applications to classification
-        of non-invertible symmetries in 2+1d QFTs.
-      </p>
-      <h3 id="gauge-theories-from-topological-bootstrap">
-        Gauge theories from topological bootstrap
-      </h3>
-      <p>
-        <img
-            align="right"
-            src="./fusion.png"
-            alt="JSZLjzg.png"
-            border="0"
-             height="150"
-            width="420"
-        />
-      </p>
-      <p align="justify">
-        Extended operators play a crucial role in determining the gauge group of
-        a QFT. For example, in a gauge theory with Lie algebra
-        \( su(2) \), the global structure of the gauge group can be \( SU(2) \)
-        or \( SO(3) \). This is determined by the charges of Wilson, 't Hooft and dyonic
-        lines in the theory <a  \(href="https://arxiv.org/abs/1305.0318">[1]</a>.
-        In a finite gauge theory, the fusion rules of Wilson lines alone cannot
-        be used to determine the full gauge group. In
-        <a href="https://arxiv.org/abs/2302.08419">[2]</a>, I explore the fusion
-        rules of topological surface operators in a 2+1d gauge theory. I show
-        that, in general, fusion rules of surface operators contain information
-        about the gauge group not contained in the fusion rules of Wilson lines,
-        and vice-versa.
-      </p>
-
-      <h1>Publications</h1>
-
-      <p>
-        <a
-          href="https://inspirehep.net/authors/1775981?ui-citation-summary=true"
-          >INSPIRE</a
-        >,
-        <a href="https://scholar.google.com/citations?user=rFHyb4YAAAAJ&hl=en"
-          >Google Scholar</a
-        >.
-      </p>
-
-      <h1>Thesis</h1>
-
-      <ul>
-      <li>
-        <p><a href="https://qmro.qmul.ac.uk/xmlui/handle/123456789/83436">
-          PhD Thesis: Algebraic Structure of Topological and Conformal Field Theories</a> </p>
-      </li>
-      <li>
-        <p><a href="https://imperialcollegelondon.app.box.com/s/vaxbrpfpd1aaymezam1mfn00krn7fsqv">
-          Master's Thesis: Aspects of Topological Quantum Field Theory</a> </p>
-      </li>
-      </ul>
+      <section class="research-links" aria-label="Research links">
+        <div class="research-link">
+          <span class="link-label">Publications</span>
+          <span class="link-description"><a href="https://inspirehep.net/authors/1775981?ui-citation-summary=true">INSPIRE</a> · <a href="https://scholar.google.com/citations?user=rFHyb4YAAAAJ&amp;hl=en">Google Scholar</a></span>
+        </div>
+        <a href="https://qmro.qmul.ac.uk/xmlui/handle/123456789/83436">
+          <span class="link-label">PhD thesis</span>
+          <span class="link-description">Algebraic Structure of Topological and Conformal Field Theories</span>
+        </a>
+        <a href="https://imperialcollegelondon.app.box.com/s/vaxbrpfpd1aaymezam1mfn00krn7fsqv">
+          <span class="link-label">Master’s thesis</span>
+          <span class="link-description">Aspects of Topological Quantum Field Theory</span>
+        </a>
+      </section>
     </div>
 
     <script>

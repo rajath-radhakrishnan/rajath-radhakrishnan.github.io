@@ -15,6 +15,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Talks</title>
   <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="talks-improved.css" />
 </head>
 
 <div class="topnav">
@@ -145,6 +146,63 @@
 </li>
 </ul>
 </div>
+
+<script>
+  document.querySelectorAll('.main__html li').forEach(function (item) {
+    var paragraph = item.querySelector('p');
+    if (!paragraph) return;
+    var links = Array.from(paragraph.querySelectorAll('a'));
+    var pdf = links.find(function (link) { return /drive.google.com/i.test(link.href); });
+    var video = links.find(function (link) { return /youtu.be|youtube.com|bilibili.com|bimsavideo.html|scgp.stonybrook.edu\/video/i.test(link.href); });
+    var title = pdf ? pdf.textContent.trim() : paragraph.textContent.split(',')[0].trim();
+    var titleElement = document.createElement('strong');
+    titleElement.className = 'talk-title';
+    titleElement.textContent = title;
+    if (pdf) pdf.remove();
+    if (video) video.remove();
+    var details = paragraph.innerHTML.replace(/^\s*,?\s*/, '').replace(/\s*Video\s*$/i, '').trim();
+    if (!pdf) details = details.substring(details.indexOf(',') + 1).trim();
+    paragraph.innerHTML = details;
+    paragraph.prepend(titleElement);
+    var actions = document.createElement('span');
+    actions.className = 'talk-links';
+    function addAction(link, label, icon) {
+      if (!link) return;
+      link.remove();
+      var action = document.createElement('a');
+      action.className = 'talk-link';
+      action.href = link.href;
+      action.target = '_blank';
+      action.rel = 'noopener';
+      var symbol = icon === 'fa-file-pdf'
+        ? '<svg class="resource-icon" viewBox="0 0 16 18" aria-hidden="true"><path d="M2 1.25h7l5 5v10.5H2z" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M9 1.25v5h5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>'
+        : '<span class="resource-icon" aria-hidden="true">▶</span>';
+      action.innerHTML = symbol + ' ' + label;
+      actions.appendChild(action);
+    }
+    addAction(pdf, 'PDF', 'fa-file-pdf');
+    addAction(video, 'Video', 'fa-circle-play');
+    if (actions.children.length) paragraph.appendChild(document.createElement('br'));
+    paragraph.appendChild(actions);
+  });
+
+  function toggleMenu() {
+    var x = document.querySelector(".topnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+
+  window.addEventListener('resize', function() {
+      var nav = document.getElementById("topnav");
+      if (window.innerWidth > 950) {
+          // If screen is resized to more than 950px, remove the responsive class
+          nav.classList.remove("responsive");
+      }
+  });
+</script>
 
 <script>
   function toggleMenu() {

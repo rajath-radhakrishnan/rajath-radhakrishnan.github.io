@@ -1,0 +1,60 @@
+/* Tools page refinements. */
+.main__html {
+  max-width: 760px;
+  padding-top: 3.2rem;
+}
+
+.main__html > p:first-of-type {
+  color: #090909;
+  font-size: 1.05rem;
+  margin-bottom: 2.5rem;
+  max-width: 650px;
+}
+
+.main__html h3 {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.16);
+  font-size: 1.35rem;
+  margin: 2.8rem 0 0;
+  padding-bottom: 0.55rem;
+}
+
+.main__html h3::after { display: none; }
+
+.main__html ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main__html li {
+  margin: 0;
+  padding: 0.85rem 0;
+}
+
+.main__html li p {
+  color: #000;
+  margin: 0;
+  text-align: left;
+}
+
+.main__html li a {
+  font-size: 1.02rem;
+  font-weight: 600;
+}
+
+.main__html li a:hover {
+  color: rgb(110, 52, 142);
+  text-decoration: none;
+}
+
+.main__html > p:last-child {
+  border-left: 2px solid rgba(19, 61, 147, 0.3);
+  color: #0b0b0b;
+  margin-top: 2rem;
+  padding-left: 1rem;
+}
+
+@media screen and (max-width: 600px) {
+  .main__html { padding-top: 2.3rem; }
+  .main__html li a { font-size: 0.98rem; }
+}

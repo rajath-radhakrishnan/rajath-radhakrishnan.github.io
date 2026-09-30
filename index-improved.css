@@ -1,0 +1,65 @@
+
+.main__html .news-list {
+  list-style: none !important;
+  margin: 1;
+  padding: 0;
+}
+
+.profile-photo {
+  border-radius: 50%;
+  float: right;
+  height: 180px;
+  margin: 0 0 1.2rem 2rem;
+  object-fit: cover;
+  width: 180px;
+}
+
+#news {
+  margin-top: 4rem;
+}
+
+#news i {
+  color: var(--accent, rgb(19, 61, 147));
+  font-size: 0.9em;
+  margin-right: 0.35rem;
+}
+
+.news-list li::marker {
+  content: "";
+}
+
+.news-list li {
+  padding: 0.85rem 0 0.95rem;
+}
+
+.news-list li p {
+  color: #000;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.news-list b {
+  color: var(--muted);
+  font-size: inherit;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  margin-right: 0.35rem;
+  white-space: nowrap;
+}
+
+
+@media screen and (max-width: 1240px) {
+  .topnav { padding-left: 1.5rem; padding-right: 1.5rem; }
+  .topnav .icon { margin-right: 0; }
+}
+
+@media screen and (max-width: 600px) {
+  .main__html { padding-top: 2.5rem; }
+  .topnav .name a { font-size: 1.1rem; }
+
+  .profile-photo {
+    display: block;
+    float: none;
+    margin: 0 auto 1.5rem;
+  }
+}
