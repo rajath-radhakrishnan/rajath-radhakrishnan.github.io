@@ -89,7 +89,7 @@
 
 @media screen and (max-width: 600px) {
   .main__html { padding-top: 2.3rem; }
-  .research-area h2 { font-size: 1.08rem; }
+  .research-area h2 { font-size: 1.3rem; }
   .research-links { grid-template-columns: 1fr; }
 
   .research-area-image {
@@ -104,7 +104,8 @@
   }
 
   .research-area {
-    display: block;
+    display: flex;
+    flex-direction: column;
     margin-bottom: 2.8rem;
   }
 
